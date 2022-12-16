@@ -436,18 +436,16 @@ ul {
 /* footer */
 .footer {
   background-color: var(--footer-background-color);
-  /* padding: 60px 0; */
+  padding: 60px 0;
 }
 
 .footer-container {
   display: flex;
+  align-items: baseline;
+  justify-content: space-between;
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-}
-
-.logo-adress {
-  padding: 60px 0;
 }
 
 .footer-logo {
@@ -488,9 +486,7 @@ ul {
 }
 
 .footer-icon-container {
-  margin-left: 70px;
-  padding-top: 72px;
-  padding-bottom: 100px;
+  margin-left: 75px;
 }
 
 .footer-soc-text {
@@ -546,12 +542,9 @@ ul {
 
 /* Footer-EMAIL */
 
-.footer-wrapper {
-}
-
 .subscribe-form {
-  position: relative;
-  margin-top: 72px;
+  display: flex;
+  align-items: flex-end;
   margin-left: 93px;
   width: 570px;
   height: 86px;
@@ -594,15 +587,9 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-btn {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-
 .footer-sub-btn {
-  width: 200px;
-  height: 50px;
+  margin-left: 12px;
+
   padding: 10px 28px;
   font-weight: 700;
   font-size: 16px;
@@ -842,8 +829,11 @@ ul {
   fill: var(--accent-color);
 }
 
-.modal-input-group:not(:last-child) {
+.modal-input-group {
   margin-bottom: 10px;
+}
+.modal-textarea {
+  margin-bottom: 20px;
 }
 
 .modal-input-group label {
